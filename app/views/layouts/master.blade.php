@@ -23,7 +23,9 @@
 			@yield('content')
 
 		</div>
-
+	
+	
+	{{ link_to("/users/create", "Create User") }}
 	</body>
 
 </html>

@@ -27,6 +27,12 @@ Route::get('/', 'TasksController@index');
 Route::get('tasks/{id}', 'TasksController@show')->where('id', '\d+');
 
 Route::get('{username}/tasks', 'UserTasksController@index');
+Route::resource('/users', 'UsersController');
+// Route::get('/users/create', 'UsersController@create');
+// Route::get('/users/store', 'UsersController@store');
+
+//Route::get('users', 'UsersController@create');
+
 //Route::get('{username}/tasks/{id}', ['as' => 'user.tasks.show', 'uses' => 'UserTasksController@show']);
 
 // Route::get('{username}/tasks', function($username)
